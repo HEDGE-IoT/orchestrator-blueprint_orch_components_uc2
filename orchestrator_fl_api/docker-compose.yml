@@ -1,0 +1,15 @@
+services:
+  fl_orch_p2p:
+    image: vofr/dsrl:fl_orch_p2p_v5
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=sqlite:///./nodes.db
+      - ENV=production
+    volumes:
+      - ./nodes.db:/src/nodes.db
+    networks:
+      - hedge-network
+networks:
+  hedge-network:
+    driver: bridge
