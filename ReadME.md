@@ -1,4 +1,4 @@
-# Federated AI-driven Energy Services
+# UC2 Federated AI-driven Energy Services
 
 Orchestrator component for managing and optimizing Federated Learning (FL) processes across distributed edge nodes.
 
